@@ -5,8 +5,9 @@ myLines = myFile.read()
 print(myLines)
 
 #write and read
-myFile =open(path, 'w')
+myFile =open(path, 'w+')
 text = "\nМетушалах"
 myFile.write(text)
+myLines = myFile.read()
 print(myLines)
 myFile.close()
